@@ -1,0 +1,304 @@
+.VideoPage, .VideoPage-loading{
+    min-height: 100vh;
+    color: white;
+}
+
+.Content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 0 1rem 0;
+}
+
+.Video-wrapper {
+    /* aspect-ratio: 1.8/1; */
+    aspect-ratio: 1.781 / 1;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.Video-wrapper iframe {
+    object-fit: cover;
+    height: 100%;
+}
+
+.Video-title {
+    width: 100%;
+    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+           line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    line-height: 1.5rem;
+    font-size: 1.15em;
+    margin-bottom: 0.8rem;
+
+}
+
+.Video-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.Video-analytics {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.7rem;
+    color: var(--on-surface-variant);
+}
+
+.Video-btn{
+    background-color: var(--surface-variant);
+    border-radius: 5rem;
+    overflow: hidden;
+    /* padding: 0.4rem 1rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* gap: 1.3rem; */
+}
+
+.Video-like--btn, .Video-dislike--btn {
+    background-color: var(--surface-variant);
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    align-items: center;
+    padding: 0.4rem 1rem;
+}
+
+.Video-like--btn:hover, .Video-dislike--btn:hover {
+    background-color: gray;
+}
+
+
+.Video-channel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+
+    border-top: 1px solid var(--surface);
+    border-bottom: 1px solid var(--surface);
+    padding: 1rem 0 1rem;
+    
+}
+
+.Video-channel--pfp, .Comments-pfp {
+    /* min-height: 2rem; */
+    aspect-ratio: 1/1;
+    width: 2rem;
+    border-radius: 10rem;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Video-channel--details{
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.Video-channel--name {
+    font-weight: 600;
+}
+
+.Video-channel--subs {
+    font-size: 0.85em;
+    color: var(--on-surface-variant);
+}
+
+.Video-channel--subscribe {
+    padding: 0.5rem 2rem;
+    color: black;
+    background-color: white;
+    border-radius: 5rem;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+.Video-comments {
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENT-RECOMMENDED */
+
+.Content-recommended {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.Recommended-h4, .Comments-h4 {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.Recommended-video--list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.Recommended-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+}
+
+.Recommended-video:hover {
+    cursor: pointer;
+}
+
+.Recommended-video:last-child {
+    margin-bottom: 5rem;
+}
+
+/* .Recommended-videos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0 1rem 0;
+} */
+
+.Recommended-video--thumbnail {
+    /* min-height: 10rem; */
+    aspect-ratio: 1.8/1;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin-top: 1rem; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Recommended-video--duration {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.803);
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.Recommended-video--info {
+    width: 100%;
+}
+
+.Recommended-video--text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.Recommended-video--title {
+    font-weight: 600;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+           line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    line-height: 1.15rem;
+}
+
+.Recommended-video--details{
+    display: flex;
+    gap: 0.2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color:  var(--on-background);
+    font-weight: 500;
+}
+
+.Recommended-video--creator{
+    font-size: 0.9em;
+}
+
+.Recommended-video--analytics {
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+    font-size: 0.8em;
+}
+
+.Comments-ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.Comments-li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.Comments-li:last-child {
+    margin-bottom: 5rem;
+}
+
+.Comments-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    /* width: 100%; */
+}
+
+.Comments-user {
+    font-weight: 600;
+}
+
+/* GENERAL MEDIA QUERIES */
+@media screen and (max-width: 967px){
+    .Content-wrapper {
+            grid-template-columns: 1fr;
+    }
+}

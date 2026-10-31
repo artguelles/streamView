@@ -1,0 +1,140 @@
+.Profile {
+    min-height: 100vh;
+    color: white;
+}
+
+.Profile-h2 {
+    padding: 0 5rem 0;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.Profile-span {
+    padding: 0 5rem 0;
+    font-size: 0.9em;
+    color: var(--on-surface-variant);
+    display: block;
+    width: 100%;
+}
+
+.Profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 5rem 0;
+}
+
+.Profile-form--divider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.Profile-form--divider label {
+    font-size: 0.8em;
+    color: var(--on-surface-variant);
+}
+
+.Profile-input--wrapper {
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 0.6rem;
+    border: 1.5px solid var(--surface-bright);
+    color: var(--on-surface-variant);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.Profile-input--wrapper input {
+    width: 100%;
+    color: var(--on-surface-variant);
+
+}
+
+.Profile-input--wrapper input:focus,
+.Profile-input--wrapper input:focus-visible {
+    outline: none;
+}
+
+.Profile-input--wrapper input::placeholder {
+    color: #787776;
+}
+
+.Profile-image {
+    width: 10rem;
+}
+
+.Profile-terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.Profile-terms label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.3rem;
+}
+
+.Profile-submit--divider {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.Profile-submit--divider {
+    grid-template-columns: 1fr;
+}
+
+.Profile-input--submit {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 0.8rem 1rem;
+    background-color: var(--primary-container);
+    width: 100%;
+    border-radius: 10rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--on-primary-container);
+    /* margin: 0 0 1rem; */
+}
+
+/* .Profile-input--submit:last-child {
+    margin: 0;
+} */
+
+.Profile-input--submit input {
+    color: var(--on-primary-container);
+    font-weight: 500;
+}
+
+/* GENERAL MEDIA QUERIES */
+@media screen and (max-width: 967px) {
+
+    .Profile-h2,
+    .Profile-span {
+        padding: 0 2rem 0;
+    }
+
+    .Profile-form {
+        padding: 0 2rem 0;
+    }
+}

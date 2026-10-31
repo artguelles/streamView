@@ -1,0 +1,160 @@
+.Login {
+    min-height: 100vh;
+    background-color: var(--surface-dim);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login-logo {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 2em;
+    margin: 3rem 0 0;
+}
+
+.Login-span {
+    font-size: 0.9em;
+    color: var(--on-surface-variant);
+    margin-bottom: 1rem;
+}
+
+.Login-container {
+    margin-top: 1.5rem;
+    padding: 2rem;
+    max-width: 30rem;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border: 1px solid var(--surface-bright);
+    width: 90%;
+    background-color: var(--surface);
+}
+
+.Login-h1 {
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+
+.Login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.Login-form--divider {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Login-form--divider label {
+    font-size: 0.8em;
+    color: var(--on-surface-variant);
+}
+
+.Login-input--wrapper {
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 0.6rem;
+    border: 1.5px solid var(--outline);
+    color: var(--on-surface-variant);
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.Login-input--wrapper input {
+    width: 100%;
+    color: var(--on-surface-variant);
+
+}
+
+.Login-input--wrapper input:focus, .Login-input--wrapper input:focus-visible {
+    outline: none;
+}
+
+.Login-input--wrapper input::placeholder{
+    color: #787776;
+}
+
+.Login-remember{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.Login-terms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    margin: 2rem 0;
+    font-size: 0.7em;
+    color: var(--on-surface-variant);
+}
+
+.Login-input--submit {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding: 0.8rem 1rem;
+    background-color: var(--primary-container);
+    width: 100%;
+    border-radius: 10rem;
+    align-items: center;
+    justify-content: center;
+    color: var(--on-primary-container);
+    margin: 0 0 1rem;
+}
+
+.Login-input--submit:hover, .Login-input--submit input:hover {
+    cursor: pointer;
+}
+
+.Login-input--submit input {
+    color: var(--on-primary-container);
+    font-weight: 500;
+}
+
+.LoginToRegister {
+    align-self: center;
+    color: var(--inverse-surface);
+    font-size: 0.8em;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.Login-highlight {
+    font-weight: 700;
+    color: var(--surface-tint);
+}
+
+.Login-terms .Login-highlight{
+    font-weight: 500;
+}
+
+.Login-span:last-child{
+    color: var(--surface-bright);
+    /* margin: 0.8rem 0 0; */
+    margin: 0.8rem 0 2rem;
+    font-size: 0.8em;
+}

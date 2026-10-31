@@ -1,0 +1,54 @@
+/* tamaño pantallas apps */
+
+
+.Container {
+  display: flex;
+  flex-direction: row;
+}
+
+.Content {
+  width: calc(100vw - 12vw);
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: var(--background);
+  padding: 6rem 0 0;;
+}
+
+
+.SideBar.isOpen .Content{
+  width: calc(100vw - 20vw)
+}
+
+
+/* GENERAL MEDIA QUERIES */
+@media screen and (max-width: 1080px) {
+  .SideBar.isOpen {
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width:770px){
+  .SideBar{
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 492px) {
+  .SideBar {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transform: translateX(-100vw);
+    transition: transform .5s ease;
+  }
+
+  .SideBar.SideBar.isOpen{
+    transform: translateX(0);
+    width: 100vw;
+  }
+
+  .Content {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,143 @@
+.Header {
+    width: 100%;
+    background-color: #313030;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+
+.Header-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.Header-menu {
+    padding: 10px;
+
+}
+
+.Header-menu:hover {
+    cursor: pointer;
+    background: #5f5f5f;
+    border-radius: 100px;
+}
+
+.Header-logo {
+    font-weight: 600;
+    font-size: 1.2em;
+    color: var(--primary)
+}
+
+.Header-logo:hover {
+    cursor: pointer;
+}
+
+.Header-notifications {
+    position: relative;
+}
+
+.Header-notifications-btn, .Header-upload {
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+;
+}
+
+.Header-notifications-btn:hover, .Header-upload:hover{
+    background: #5f5f5f;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Header-notifications-popup{
+    display: none;
+    position: absolute;
+    /* top: 0;
+    left: 0; */
+}
+
+.Header-notifications-popup.isActive {
+    display: block;
+    position: absolute;
+    top: 3rem;
+    left: -12rem;
+    min-height: 7rem;
+    width: 15rem;
+    background: gray;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.Header-notifications-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding: 0 0 5px 0;
+    font-size: 1.3em;
+}
+
+.Header-notifications-close {
+    color: white;
+}
+
+.Header-notifications-show {
+    display: flex;
+    width: 100%;
+    padding: 15px 0 0 0;    
+}
+
+.Header-profile {
+    min-height: 2rem;
+    width: 2rem;
+    border-radius: 10rem;
+    overflow: hidden;
+    background-color: white;
+    border: 2px solid transparent;
+    transition: border .2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--surface-variant);
+
+}
+
+.Header-profile svg {
+    width: 32px;
+}
+
+.Header-profile:hover {
+    /* border: 2px solid #5f5f5f; */
+    border: 2px solid var(--outline);
+    cursor: pointer;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 967px){
+    .Header {
+        padding: 1rem 1rem;
+    }
+    .Header-div{
+            gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .Header-div{
+        gap: 0.5rem;
+    }
+}

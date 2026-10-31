@@ -1,0 +1,32 @@
+.SearchBar{
+    padding: 0.5rem 1rem;
+    /* border-radius: 5rem 0 0 5rem;     */
+    border-radius: 5rem;
+    background-color: #0f0f0f;
+    width: fit-content;
+    border: 1px solid white;
+}
+
+.SearchBar-form {
+    width: 100%;
+}
+
+.SearchBar-relative{
+    display: flex;
+    flex-direction: row;
+}
+
+.SearchBar-input{
+    width: 100%;
+}
+
+.SearchBar-input:focus, .SearchBar-input:focus-visible{
+    outline: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 967px){
+    .SearchBar{
+        display: none;
+    }
+}

@@ -1,0 +1,6 @@
+.Error404 {
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    background-color: var(--background);
+}
